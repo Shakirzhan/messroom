@@ -1,0 +1,146 @@
+.accordion {
+	&__caption {
+		cursor: pointer;
+		position: relative;
+		padding: 19px 0 19px 52px;
+		font-size: 30px;
+		line-height: 50px;
+		background-color: #f3f3f3;
+		border-radius: 10px;
+		margin-bottom: 15px;
+
+		&:focus {
+			outline: none;
+		}
+
+		@media (max-width: 768px) {
+			padding-right: 50px;
+		}
+
+		/**
+		&::after  {
+			content: '';
+			position: absolute;
+			right: 77px;
+			top: 44px;
+			width: 19px;
+			height: 7px;
+			background-image: url(../image/green_arrow.png);
+			background-repeat: no-repeat;
+			transform: rotate(180deg);
+
+			@media (max-width: 768px) {
+				right: 30px;	
+			}
+		}
+		*/
+		&--opened {
+			background-color: #5d9956;
+			color: #fff;
+			/**
+			&::after {
+				background-image: url(../image/gray_arrow.png);	
+				transform: rotate(0deg);
+			}	
+			*/
+		}
+	}
+
+	&__line {
+		display: flex;
+		align-items: stretch;
+		//margin-top: 17px;
+		//margin-bottom: 45px;
+		flex-wrap: wrap;
+		/**
+		&::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		*/
+	}
+
+	&__item {
+		// float: left;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		width: 100%;
+		@media (min-width: 992px) {
+			width: 50%;	
+		}
+		@media (min-width: 1200px) {
+			width: 25%;
+		}
+		box-sizing: border-box;
+		
+		
+		
+
+		&:nth-child(1n) {
+			@media (min-width: 1200px) {
+				border-right: 2px solid #7a7a7a;	
+			}
+			@media (min-width: 992px) {
+				border-right: 2px solid #7a7a7a;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (min-width: 992px) and (max-width: 1199px) {
+				border: none;
+			}
+		}
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	&__under-item {
+    display: flex;
+		align-content: center;
+    align-items: center;
+		margin: 0;
+		padding: 12px 15px 12px 42px;
+		min-height: 80px;
+
+
+		&:nth-child(2n) {
+			box-sizing: border-box;
+			background-color: #d7eed5;
+			border-top: 2px solid #e8e8e8;
+			border-bottom: 2px solid #e8e8e8;
+		}
+	}
+}
+
+
+.ui-accordion-header span {
+
+	content: '';
+	position: absolute;
+	right: 77px;
+	top: 44px;
+	width: 19px;
+	height: 7px;
+	background-image: url(../image/green_arrow.png);
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+
+	@media (max-width: 768px) {
+		right: 30px;	
+	}
+
+}
+
+h3.ui-accordion-header-active {
+	background-color: #5d9956;
+	color: #fff;	
+}
+
+h3.ui-accordion-header-active span {
+	background-image: url(../image/gray_arrow.png);	
+	transform: rotate(0deg);	
+}

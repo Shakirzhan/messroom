@@ -1,0 +1,55 @@
+.page-footer {
+
+	background-size: cover;
+	background-image: url(../image/footer_background_2.png);
+	padding: 188px 0;
+
+	&__wrapper {
+		.container();
+	}
+
+	&__caption {
+		width: 646px;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 59px;
+		color: #ffffff;
+		@media (max-width: 1200px) {
+			width: auto;
+			padding: 0 5px;
+		}
+		@media (max-width: 576px) {
+			font-size: 35px;
+			line-height: 45px;
+		}
+	}
+
+	&__description {
+		width: 800px;
+		margin: 24px auto 0;
+		font-weight: normal;
+		font-size: 31px;
+		text-align: center;
+		line-height: 46px;
+		color: #ffffff;
+		@media (max-width: 1200px) {
+			width: auto;
+			padding: 0 5px;
+		}
+		@media (max-width: 576px) {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+
+	&__button {
+		background-color: #fcd03a;
+		border-color: #fcd03a;
+
+		&:hover {
+			background-color: #fcd03a;	
+		}
+	}
+}

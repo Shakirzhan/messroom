@@ -1,0 +1,140 @@
+.advantages {
+	margin-top: 155px;
+	&__wrapper {
+		.container();
+	}
+
+	&__caption {
+		width: 670px;
+		.main-caption();
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+		@media (max-width: 992px) {
+			text-align: center;
+		}
+		@media (max-width: 576px) {
+			font-size: 35px;
+		}
+	}
+
+	&__item {
+		padding: 0 73px;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 992px) {
+			padding: 0 5px;
+		}
+	}
+
+	&__item-1 {
+		margin-top: 92px;
+	}
+
+	&__item-2 {
+		margin-top: 120px;
+	}
+
+	&__item-2,
+	&__item-4 {
+		flex-direction: row-reverse;
+	}
+
+	&__item-3 {
+		margin-top: 175px;
+	}
+
+	&__item-4 {
+		margin-top: 163px;
+		margin-bottom: 165px;
+	}
+
+	&__item {
+		@media (max-width: 992px) {
+			flex-direction: column;
+			margin-top: 25px;
+		}
+	}
+
+	&__image {
+		width: 210px;
+		@media (max-width: 1200px) {
+			width: 25%;
+		}
+		@media (max-width: 992px) {
+			text-align: center;
+			width: 100%;	
+		}
+		img {
+			width: 100%;
+			@media (max-width: 992px) {
+				width: 25%;
+			}
+		}
+	}
+
+	&__item-2 .advantages__image {
+		padding: 82px 0 0;
+		text-align: right;
+		@media (max-width: 992px) {
+			text-align: center;
+		}
+	}
+
+	&__item-3 .advantages__image {
+		padding: 17px 0 0;
+	}
+
+	&__item-4 .advantages__image {
+		text-align: right;
+		padding: 98px 0 0;
+		@media (max-width: 992px) {
+			text-align: center;
+		}
+	}
+
+	&__word {
+		width: 718px;
+		@media (max-width: 1200px) {
+			width: 60%;
+		}
+		@media (max-width: 992px) {
+			width: 100%;
+			h2 {
+				text-align: center;
+				margin-top: 20px;
+			}
+			p {
+				text-align: justify;
+			}
+		}
+	}
+
+	&__caps {
+		margin: 0;
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: bold;
+		color: #3c8434;
+		@media (max-width: 576px) {
+			font-size: 25px;
+		}
+	}
+
+	&__item-2 .advantages__caps {
+		width: 513px;
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+	}
+
+	&__description {
+		margin: 41px 0 0;
+		font-size: 25px;
+		line-height: 35px;
+		@media (max-width: 576px) {
+			font-size: 18px;
+			margin: 5px 0 0;
+		}
+	}
+}

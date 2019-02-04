@@ -1,0 +1,170 @@
+/**
+@keyframes bounce {
+	0 {
+    top: 725px;
+  }
+  100% {
+    top: 745px;
+  }
+}
+
+@-webkit-keyframes bounce {
+	0 {
+    top: 725px;
+  }
+  100% {
+    top: 745px;
+  }			
+}
+
+*/
+.page-header {
+	position: relative;
+	min-height: 980px;
+	background-size: cover;
+	background-image: url(../image/banner_background_2.png);
+
+	&__arrow {
+		content: '';
+		cursor: pointer;
+		position: absolute;
+		top: 745px;
+		left: 50%;
+		width: 47px;
+		height: 37px;
+		margin-left: -23px;
+		background-image: url(../image/arrow.png);
+		background-repeat: no-repeat;
+		
+		animation-name: bounce;
+    -webkit-animation-name: bounce;
+
+    animation-duration: 2s; 
+    -webkit-animation-duration: 2s;
+ 
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible;
+		
+		@media (max-width: 991px) {
+			top: 850px;
+		}
+		
+	}
+
+	&__wrapper {
+		.container();
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: 440px) {
+			flex-wrap: wrap;	
+		}
+	}
+
+	&__logo {
+		margin-top: 58px;
+		@media (max-width: 991px) {
+			order: 0;
+			flex: 0 0 50%;
+		}
+		@media (max-width: 440px) {
+			flex: 0 0 100%;	
+			text-align: center;
+		}
+	}
+
+	&__telephone,
+	&__time {
+		color: #ffffff;
+		line-height: 30px;
+	}
+
+	&__data {
+		@media (max-width: 991px) {
+			order: 1;
+			flex: 0 0 50%;
+		}
+		text-align: right;
+		@media (max-width: 440px) {
+			flex: 0 0 100%;
+			text-align: center;	
+		}
+		padding: 17px 0 0;
+		margin-top: 58px;
+	}
+
+	&__telephone {
+		font-size: 26px;
+		font-family: "Open Sans", Arial, sans-serif;
+		text-decoration: none;
+		display: block;
+	}
+
+	&__time {
+		font-size: 25px;
+		line-height: 26px;
+	}
+
+	&__dropping {
+		display: block;
+	}
+
+	&__caption {
+		position: relative;
+		margin-top: 143px;
+		margin-bottom: 0;
+		font-size: 166px;
+		line-height: 170px;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: normal;
+		color: #ffffff;
+		font-family: 'Philosopher', sans-serif;
+
+		@media (max-width: 1250px) {
+			font-size: 105px;	
+		}
+
+		@media (max-width: 767px) {
+			font-size: 65px;
+		}
+
+		@media (max-width: 440px) {
+			font-size: 45px;
+			margin-top: 50px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 230px;
+			right: 230px;
+			height: 2px;
+			background-color: #ffffff;
+		}
+	}
+
+	&__description {
+		margin: 19px 0 0;
+		font-size: 50px;
+		line-height: 68px;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-align: center;
+		@media (max-width: 1250px) {
+			font-size: 25px;	
+		}
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
+		@media (max-width: 440px) {
+			font-size: 18px;	
+			line-height: 28px;
+		}
+	}
+}

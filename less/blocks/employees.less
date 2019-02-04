@@ -1,0 +1,89 @@
+.employees {
+
+	padding-top: 127px;
+	min-height: 855px;
+	background-size: cover;
+	background-image: url(../image/employees_background.png);
+
+	@media (max-width: 425px) {
+		padding-bottom: 50px;
+	}
+	&__wrapper {
+		.container();
+	}
+
+	&__caption {
+		text-align: center;
+		color: #fff;
+		.main-caption();
+		
+		@media (max-width: 991px) {
+			text-align: left;
+		}
+
+		@media (max-width: 425px) {
+			font-size: 30px;
+		}
+	}
+
+	&__description {
+		margin: 0;
+		margin-top: 53px;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+		color: #fff;
+
+		@media (max-width: 991px) {
+			text-align: left;
+		}
+
+		@media (max-width: 425px) {
+			font-size: 25px;
+		}
+	}
+
+	&__list {
+		width: 686px;
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
+		margin-top: 27px;
+
+		@media (max-width: 991px) {
+			width: auto;
+		}
+	}
+
+	&__item {
+		position: relative;
+		padding: 0 0 0 43px;
+		font-size: 30px;
+		line-height: 45px;
+		color: #fff;
+
+		@media (max-width: 425px) {
+			font-size: 25px;
+			line-height: 35px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 11px;
+			left: 2px;
+			width: 32px;
+			height: 23px;
+			background-image: url(../image/jackdaw.png);
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__button {
+		max-width: 235px;
+		box-sizing: border-box;
+		padding: 15px 0;
+		margin-top: 74px;
+		border-width: 3px;
+	}
+}
